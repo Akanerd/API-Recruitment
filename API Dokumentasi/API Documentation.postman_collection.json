@@ -1,0 +1,428 @@
+{
+	"info": {
+		"_postman_id": "7f93765a-5e5f-4e1c-bdbb-e3ae09e64292",
+		"name": "API Documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Skill",
+			"item": [
+				{
+					"name": "Skill Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Skill/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Skill",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Skill Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \r\n\t\"name\" : \"Production Manager\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Skill/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Skill",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Skill Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"Cloud Computing\"\n}\n"
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Skill/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Skill",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Skill Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Skill/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Skill",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Skill Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Skill/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Skill",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API Candidate",
+			"item": [
+				{
+					"name": "Candidate Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Candidate/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Candidate",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Candidate Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"azza\",\n\t\"job_id\" : \"2\",\n    \"email\": \"azza0809@gmail.com\",\n    \"phone\" : \"081805429183\",\n    \"year\" : \"2001\",\n    \"skill_ids\" : [4],\n    \"skill_ids*\" : [\"Version Control System (Gitlab, Github)\"]\n                \n}"
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Candidate/update/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Candidate",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Candidate Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"safah\",\n\t\"job_id\" : \"2\",\n    \"email\": \"azza0009@gmail.com\",\n    \"phone\" : \"081805429180\",\n    \"year\" : \"2001\",\n    \"skill_ids\" : [3,1],\n    \"skill_ids*\" : [\"API (JSON, REST)\",\"PHP\"]\n                \t\t\t\n}"
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Candidate",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Candidate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Candidate Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Candidate/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Candidate",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API Jobs",
+			"item": [
+				{
+					"name": "Job Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Job",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Job"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Job Store",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n \"name\": \"Data Science\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Job",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Job"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Job Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Job/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Job",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Job Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Data Analyst\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Job/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Job",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Job Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/Job/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"Job",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
